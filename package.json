@@ -1,0 +1,47 @@
+{
+    "name": "@hadyjsc/nobi-api-with-expressjs",
+    "version": "1.0.0",
+    "description": "API for technical test nobi.",
+    "main": "server.js",
+    "scripts": {
+        "debug": "node --inspect server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/app-backend-services/users.git"
+    },
+    "keywords": [
+        "Auth",
+        "User",
+        "Service",
+        "Finance"
+    ],
+    "author": "Hady Eka Saputra",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/app-backend-services/users/-/issues"
+    },
+    "homepage": "https://gitlab.com/app-backend-services/users/-/blob/master/readme.md",
+    "dependencies": {
+        "app-root-path": "^3.0.0",
+        "axios": "^0.21.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.0.0",
+        "crypto-random-string": "^3.3.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.13.0",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.0",
+        "mustache": "^4.0.1",
+        "nodemailer": "^6.4.11",
+        "pg": "^8.3.2",
+        "randomstring": "^1.1.5",
+        "sequelize": "^6.3.5",
+        "sequelize-cli": "^6.2.0",
+        "sequelize-date-no-tz-postgres": "^1.0.0"
+    }
+}
