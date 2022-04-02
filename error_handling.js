@@ -14,10 +14,10 @@ module.exports = (err, req, res, next) => {
                 res.status(status).json({ code, type, title, message });
             }
         } else {
-            if (name === 'SequelizeValidationError' || name === 'SequelizeDatabaseError' || name === 'SequelizeConnectionError') {
+            if (name === 'SequelizeValidationError' || name === 'SequelizeDatabaseError' || name === 'SequelizeConnectionError' || name === 'SequelizeUniqueConstraintError') {
                 res.status(status).json({ code, type, title, message });
             } else {
-                res.status(code).json({ code: 500, type: 'error', title: 'Error', message: 'internal server error' });
+                res.status(500).json({ code: 500, type: 'error', title: 'Error', message: message ? message : 'internal server error' });
             }
         }
     }

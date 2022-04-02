@@ -13,4 +13,12 @@ router.use('/api/v1/auth', auth)
 const fact = require('./fact')
 router.use('/api/v1/fact', fact)
 
+/** Transaction API */
+const transaction = require('./transaction')
+router.use('/api/v1/transaction', transaction)
+
+/** Price API */
+const price = require('./price')
+router.use('/api/v1/price', price)
+
 module.exports = router;
