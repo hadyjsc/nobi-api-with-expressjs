@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: instal",
+      "code": "ENOENT",
+      "stack": "Error: not found: instal\n    at getNotFoundError (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:41585:51)\n    at Function.whichSync [as sync] (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:41662:13)\n    at getCommandAbsolutePathSync (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:43227:44)\n    at default_1 (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:43236:32)\n    at /Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:178156:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/Users/hadyekasaputra/NodeJs/nobi",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: instal",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: instal\n    at getNotFoundError (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:41585:51)\n    at Function.whichSync [as sync] (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:41662:13)\n    at getCommandAbsolutePathSync (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:43227:44)\n    at default_1 (/Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:43236:32)\n    at /Users/hadyekasaputra/.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.2/node_modules/pnpm/dist/pnpm.cjs:178156:39"
+    }
+  }
+}
