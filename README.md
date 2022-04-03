@@ -1,7 +1,7 @@
 # NOBI Project
 
 ## Project
-Adalah test teknis yang diberikan team NOBI saat proses recruitement, download project pada repository ini atau gunakan syntax `git clone https://github.com/hadyjsc/nobi-api-with-expressjs.git`.
+Adalah test teknis yang diberikan team NOBI saat proses recruitement, download project pada repository ini atau gunakan syntax `git clone https://github.com/hadyjsc/nobi-api-with-expressjs.git`. Project di buat menggunakan Javascript menggunakan framework expressjs dengan database Postgresql, ORM yang di gunakan adalah sequelize.
 
 ## Instalasi
 Pastikan environment development sudah terinstall NodeJS dan NPM, dapat melihat pada [website official NodeJS](https://nodejs.org/en/) untuk download dan install. Setelah melakukan installasi NodeJS selanjutnya adalah melakukan installasi package pada project.
