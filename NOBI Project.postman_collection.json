@@ -1,0 +1,1321 @@
+{
+	"info": {
+		"_postman_id": "2908ce0e-20f2-47c3-8dca-99728a689f2e",
+		"name": "NOBI Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "hady@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12qwaszx",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/v1/auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "hady@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "12qwaszx",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:3000/api/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "100"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"64-1JBZA5ZW6D8CuYID5UkzL/GubHI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 05:57:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"E-Mail has been registered.\",\n    \"type\": \"success\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jhon_doe@mail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12qwaszx",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/v1/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "hady@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "12qwaszx",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:3000/api/v1/auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "618"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26a-QYxn4CMPfyz7RqKpbeSh1hvnvIk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 06:11:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success\",\n    \"type\": \"success\",\n    \"message\": \"Welcome, login successful.\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwZmFmMGRlLWQ5ODEtNDc2NS05ZjI3LWI5MzA0YzNlOGZkOCIsIm5hbWUiOm51bGwsImVtYWlsIjoiaGFkeUBnbWFpbC5jb20iLCJpYXQiOjE2NDg4Nzk4NjV9.BxtgTRHm3LW8qqz_LvjPhW1rIq0UnBzR7Qn2LDh8pIVZPQxPKddMv1nmKZ--X9D9nWP3VlpTiDyK8G8TF1QN2yBBUqvxcNORmpT0wLTWqPVXFjv7DiF6MH3mn5A0YO9rkxk6uF9wnaa_am7xiuWfJ0Hk3imUCQ2I8lYn0Yd0hBZJsg1h3smbBsBKqXauPnhu6ohDuj4zpxVjJzoPrND-VqIpWOs2hksH1Xd9drwyD6CjgIsXvq1TTb1Bx2Xg0aO35WVKaQs_nQ8zBlEJFBxwK493BwF3nMvLTxrpSM3N3Z68ZCzi1d97dFeohK4YjaxXz9VHCQGGgteWTViCBOwAgQ\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Decoded",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwZmFmMGRlLWQ5ODEtNDc2NS05ZjI3LWI5MzA0YzNlOGZkOCIsIm5hbWUiOm51bGwsImVtYWlsIjoiaGFkeUBnbWFpbC5jb20iLCJpYXQiOjE2NDg4NzkxNDV9.hF_icKSLfp7ysLP5gNuhP0lDpH8UezNuU6YHPfjaEu8K3SKOdx-LBgcZLInuosCdM_eQGYRyx5_rSbIv7YQH18aUP_kezDWYInsqiMqEipxWkr_Ul8Xopnugo490gJno9ffyLsWOFqIuy8jMj7jGG1tJHeqXKzLsd34dC0uC_Bd2rN3PvkFuRHHwd8_XH0o6v7y0Zd5a1yL56_Wq8xiyavkTZlPyLCliQVfJKwSvDHqchhzfs-H4hETnbiZZ_Bk7KnuefeHQXMKPSXq9nZbXkg5Z7Rc5FeGl-OYSUjJfuBieJBlywVo7ZZBzEpoYJP1BK9_Rhf_Aj3l0kKxSdDqgFg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/auth/decoded",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"decoded"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Decoded",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/auth/decoded",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"decoded"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-2T8LVnyKJ80spTwEWBbCm70N+0g\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 06:10:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success\",\n    \"type\": \"success\",\n    \"message\": \"User information\",\n    \"data\": {\n        \"id\": \"f0faf0de-d981-4765-9f27-b9304c3e8fd8\",\n        \"name\": null,\n        \"email\": \"hady@gmail.com\",\n        \"iat\": 1648879145\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYwZmFmMGRlLWQ5ODEtNDc2NS05ZjI3LWI5MzA0YzNlOGZkOCIsIm5hbWUiOm51bGwsImVtYWlsIjoiaGFkeUBnbWFpbC5jb20iLCJpYXQiOjE2NDg4Nzk4NjV9.BxtgTRHm3LW8qqz_LvjPhW1rIq0UnBzR7Qn2LDh8pIVZPQxPKddMv1nmKZ--X9D9nWP3VlpTiDyK8G8TF1QN2yBBUqvxcNORmpT0wLTWqPVXFjv7DiF6MH3mn5A0YO9rkxk6uF9wnaa_am7xiuWfJ0Hk3imUCQ2I8lYn0Yd0hBZJsg1h3smbBsBKqXauPnhu6ohDuj4zpxVjJzoPrND-VqIpWOs2hksH1Xd9drwyD6CjgIsXvq1TTb1Bx2Xg0aO35WVKaQs_nQ8zBlEJFBxwK493BwF3nMvLTxrpSM3N3Z68ZCzi1d97dFeohK4YjaxXz9VHCQGGgteWTViCBOwAgQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/auth/logout",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/auth/logout",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5b-26g3A3hYyKZLeFcJiFuimgENjSc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 06:11:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"Logout successful.\",\n    \"type\": \"success\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Fetch Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/fact/fetch/:type",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fact",
+						"fetch",
+						":type"
+					],
+					"variable": [
+						{
+							"key": "type",
+							"value": "cats",
+							"description": "jokes / dogs / cats"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Fetch Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/fact/fetch/:type",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fact",
+								"fetch",
+								":type"
+							],
+							"variable": [
+								{
+									"key": "type",
+									"value": "cats",
+									"description": "jokes / dogs / cats"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "242"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f2-0+6aB/YdkQVhmmOKFTtrWxRmZJI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 07:20:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"success\",\n    \"title\": \"Success\",\n    \"message\": \"Jokes found\",\n    \"data\": {\n        \"type\": \"facts\",\n        \"target\": \"cats\",\n        \"value\": \"The tiniest cat on record is Mr. Pebbles, a 2-year-old cat that weighed 3 lbs (1.3 k) and was 6.1 inches (15.5 cm) high.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Jokes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/fact/joke",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fact",
+						"joke"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Jokes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/fact/joke",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fact",
+								"joke"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1101"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44d-j3xuYHmpISrHhOiPJt/bQwQW74A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 07:17:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"Data found.\",\n    \"type\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"085db344-e1d0-40f4-bcf4-fdbfa6b2cb90\",\n            \"type\": \"jokes\",\n            \"target\": null,\n            \"value\": \"Chuck Norris can tgjiethgrvljhjdhntsrndkhjdkhkfghbjrdsnhwedjkwbnjdfss HAAAAAAAAAAAAAAAAAACK! STOP! PLEASE! I BEG UH He died. I knew what he was going to say. It's super secret. if anyone knows, they die. Oh, and he was using this software called \\\"Dragon\\\": it's a speech-to-text device. - Chuck Norris\",\n            \"unix_created_at\": \"1648883057\",\n            \"created_at\": \"2022-04-02T00:04:17.000Z\",\n            \"created_by\": null,\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"f2ce30da-22ea-419f-b2bd-d7bcfb59b92f\",\n            \"type\": \"jokes\",\n            \"target\": null,\n            \"value\": \"The new Seven Wonders of the world are: 1. Chuck Norris's left fist 2. Chuck Norris's right fist 3. Chuck Norris's left leg 4. Chuck Norris's right leg 5. Chuck Norris's manhood 6. Chuck Norris's chin 7. Chuck Norris's beard\",\n            \"unix_created_at\": \"1648883298\",\n            \"created_at\": \"2022-04-02T00:08:18.000Z\",\n            \"created_by\": null,\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Dogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/fact/dogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fact",
+						"dogs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Dogs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/fact/dogs",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fact",
+								"dogs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "537"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"219-2RFMh6Pg/T3anlWcFrfdueNHTVU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 07:21:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"Data found.\",\n    \"type\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"dd6e8cc5-45c8-42fb-8307-237e2c53f833\",\n            \"type\": \"facts\",\n            \"target\": \"dogs\",\n            \"value\": \"Baks the blind boxer has a seeing eye goose named Buttons. Buttons the four-year-old goose leads her pup around everywhere either by hanging onto him with her neck, or by honking to tell him which way to go.\",\n            \"unix_created_at\": \"1648883626\",\n            \"created_at\": \"2022-04-02T00:13:46.000Z\",\n            \"created_by\": null,\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Cats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/fact/cats",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fact",
+						"cats"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Cats",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/fact/cats",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fact",
+								"cats"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "764"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2fc-U9HC55UBVQzatcOm62EVOVlj5sM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 07:21:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"Data found.\",\n    \"type\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"6a507657-7738-4b70-b286-8a225e41127c\",\n            \"type\": \"facts\",\n            \"target\": \"cats\",\n            \"value\": \"The tiniest cat on record is Mr. Pebbles, a 2-year-old cat that weighed 3 lbs (1.3 k) and was 6.1 inches (15.5 cm) high.\",\n            \"unix_created_at\": \"1648884058\",\n            \"created_at\": \"2022-04-02T00:20:58.000Z\",\n            \"created_by\": null,\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"1dd152f2-bd78-4dd3-ac07-30d73080db72\",\n            \"type\": \"facts\",\n            \"target\": \"cats\",\n            \"value\": \"Cats only sweat through their paws and nowhere else on their body\",\n            \"unix_created_at\": \"1648883671\",\n            \"created_at\": \"2022-04-02T00:14:31.000Z\",\n            \"created_by\": null,\n            \"updated_at\": null,\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmZDhkZWQ2LWY5MmItNDRiMi05MTU3LWMwZjI2YWYwZjQ0ZiIsImVtYWlsIjoiamhvbl9kb2VAbWFpbC5jb20iLCJpYXQiOjE2NDg5MTM1Njh9.NoZQlB68f2UZMQWeuNO6EIwEWWl7Fr4ksFB2Uz7pip0XQapPDKCAL5cMkf55Yp38j_LCVgU1PdnIIVMkJgRyAMduOdB_h_fg1QYkHKGvU5gMyhDf92L3fW0Z5Keoiq_c3pKwJ8vCU_tpER141A17wxVIu-xPGQ0_Lb0IoUfTzGvYLI6IMHYO_hF4q4nf3niFW16ADNjmMR1PVl5TBAnOu5UZ3VklPyX2kdj5fPxRnCwG-EoLOkAcKHJCJ6xII0FrI-4ykt5TFBD17-p8zxKk-vaqpU7CuPzmkVsWSy_SiWRVpayxrvE5EQMENxJ075khTCjqeyKxHfdD65SN3HOrDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "trx_id",
+							"value": "87a2582f-8d7a-4c80-a12b-7f373e066fa0",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "0.00005",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/v1/transaction",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Transaction",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "trx_id",
+									"value": "87a2582f-8d7a-4c80-a12b-7f373e066fa0",
+									"type": "default"
+								},
+								{
+									"key": "amount",
+									"value": "0.00005",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:3000/api/v1/transaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"transaction"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"db-BdME8vGGOU7S+TuBj8cOLGTI3gY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Apr 2022 16:48:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 201,\n    \"title\": \"Transaction Success\",\n    \"type\": \"success\",\n    \"data\": {\n        \"user_id\": \"dfd8ded6-f92b-44b2-9157-c0f26af0f44f\",\n        \"trx_id\": \"87a2582f-8d7a-4c80-a12b-7f373e066fa0\",\n        \"amount\": \"0.00005000\",\n        \"amount_available\": \"0.00646223\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload Document",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmZDhkZWQ2LWY5MmItNDRiMi05MTU3LWMwZjI2YWYwZjQ0ZiIsImVtYWlsIjoiamhvbl9kb2VAbWFpbC5jb20iLCJpYXQiOjE2NDg5MTM1Njh9.NoZQlB68f2UZMQWeuNO6EIwEWWl7Fr4ksFB2Uz7pip0XQapPDKCAL5cMkf55Yp38j_LCVgU1PdnIIVMkJgRyAMduOdB_h_fg1QYkHKGvU5gMyhDf92L3fW0Z5Keoiq_c3pKwJ8vCU_tpER141A17wxVIu-xPGQ0_Lb0IoUfTzGvYLI6IMHYO_hF4q4nf3niFW16ADNjmMR1PVl5TBAnOu5UZ3VklPyX2kdj5fPxRnCwG-EoLOkAcKHJCJ6xII0FrI-4ykt5TFBD17-p8zxKk-vaqpU7CuPzmkVsWSy_SiWRVpayxrvE5EQMENxJ075khTCjqeyKxHfdD65SN3HOrDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/hadyekasaputra/Downloads/Part10-schedule_coin_price_history.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/v1/price/upload",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Price List Low - High",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmZDhkZWQ2LWY5MmItNDRiMi05MTU3LWMwZjI2YWYwZjQ0ZiIsImVtYWlsIjoiamhvbl9kb2VAbWFpbC5jb20iLCJpYXQiOjE2NDg5MTM1Njh9.NoZQlB68f2UZMQWeuNO6EIwEWWl7Fr4ksFB2Uz7pip0XQapPDKCAL5cMkf55Yp38j_LCVgU1PdnIIVMkJgRyAMduOdB_h_fg1QYkHKGvU5gMyhDf92L3fW0Z5Keoiq_c3pKwJ8vCU_tpER141A17wxVIu-xPGQ0_Lb0IoUfTzGvYLI6IMHYO_hF4q4nf3niFW16ADNjmMR1PVl5TBAnOu5UZ3VklPyX2kdj5fPxRnCwG-EoLOkAcKHJCJ6xII0FrI-4ykt5TFBD17-p8zxKk-vaqpU7CuPzmkVsWSy_SiWRVpayxrvE5EQMENxJ075khTCjqeyKxHfdD65SN3HOrDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/price/low-high?week=13&year=2022&ticker=IDR&currency=idr",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"low-high"
+					],
+					"query": [
+						{
+							"key": "week",
+							"value": "13"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						},
+						{
+							"key": "ticker",
+							"value": "IDR"
+						},
+						{
+							"key": "currency",
+							"value": "idr",
+							"description": "idr / usd / btc / eth / hnst"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Price List Low - High",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/price/low-high?week=13&year=2022&ticker=IDR&currency=idr",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"price",
+								"low-high"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "13"
+								},
+								{
+									"key": "year",
+									"value": "2022"
+								},
+								{
+									"key": "ticker",
+									"value": "IDR"
+								},
+								{
+									"key": "currency",
+									"value": "idr",
+									"description": "idr / usd / btc / eth / hnst"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a9-9yEglEZSx0H4+CBLS9ntqmKBpgI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 00:57:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success.\",\n    \"message\": \"Data found\",\n    \"type\": \"success\",\n    \"data\": {\n        \"year\": \"2022\",\n        \"week\": \"13\",\n        \"currency\": \"idr\",\n        \"min\": \"0.982907000000\",\n        \"max\": \"1.028000000000\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Price List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmZDhkZWQ2LWY5MmItNDRiMi05MTU3LWMwZjI2YWYwZjQ0ZiIsImVtYWlsIjoiamhvbl9kb2VAbWFpbC5jb20iLCJpYXQiOjE2NDg5MTM1Njh9.NoZQlB68f2UZMQWeuNO6EIwEWWl7Fr4ksFB2Uz7pip0XQapPDKCAL5cMkf55Yp38j_LCVgU1PdnIIVMkJgRyAMduOdB_h_fg1QYkHKGvU5gMyhDf92L3fW0Z5Keoiq_c3pKwJ8vCU_tpER141A17wxVIu-xPGQ0_Lb0IoUfTzGvYLI6IMHYO_hF4q4nf3niFW16ADNjmMR1PVl5TBAnOu5UZ3VklPyX2kdj5fPxRnCwG-EoLOkAcKHJCJ6xII0FrI-4ykt5TFBD17-p8zxKk-vaqpU7CuPzmkVsWSy_SiWRVpayxrvE5EQMENxJ075khTCjqeyKxHfdD65SN3HOrDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/price?limit=10&page=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"price"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Price List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/price?limit=10&page=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"price"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4633"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1219-IAJhjFD/I0lQzu4CB3MOcBxnvDI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 00:57:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success\",\n    \"message\": \"Data found\",\n    \"type\": \"success\",\n    \"pagination\": {\n        \"limit\": 10,\n        \"page\": 1,\n        \"current_page\": 1,\n        \"total_page\": 16793,\n        \"first_page\": 1,\n        \"last_page\": 16793,\n        \"total_data\": 167921\n    },\n    \"data\": [\n        {\n            \"id\": \"2fcb999a-dbaa-4c9e-a3ad-c451d25b1e8a\",\n            \"name\": \"Tether \",\n            \"ticker\": \"USDT\",\n            \"coin_id\": \"913\",\n            \"code\": \"tether\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.999928000000\",\n            \"idr\": \"14279.219999999999\",\n            \"hnst\": \"53.287500641316\",\n            \"eth\": \"0.000321030000\",\n            \"btc\": \"0.000022850000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"7c51a1b7-a9e6-421f-896d-91f0e3e479c0\",\n            \"name\": \"FiveBalance\",\n            \"ticker\": \"FBN\",\n            \"coin_id\": \"831\",\n            \"code\": \"five-balance\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.000091970000\",\n            \"idr\": \"1.320000000000\",\n            \"hnst\": \"0.004964949184\",\n            \"eth\": \"0.000000029958\",\n            \"btc\": \"0.000000002129\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"522c6a0b-6b96-47b1-ae65-7e7324e11e07\",\n            \"name\": \"Cardano\",\n            \"ticker\": \"ADA\",\n            \"coin_id\": \"906\",\n            \"code\": \"cardano\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"1.085000000000\",\n            \"idr\": \"15498.030000000001\",\n            \"hnst\": \"57.811691067756\",\n            \"eth\": \"0.000348510000\",\n            \"btc\": \"0.000024790000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"0cef62cf-c4eb-4c95-90ad-4803ad198bea\",\n            \"name\": \"Matic\",\n            \"ticker\": \"MATIC\",\n            \"coin_id\": \"908\",\n            \"code\": \"matic-network\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"1.800000000000\",\n            \"idr\": \"25644.000000000000\",\n            \"hnst\": \"95.684295462284\",\n            \"eth\": \"0.000576490000\",\n            \"btc\": \"0.000041030000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"44a291a4-21a4-4a25-9ffc-a9f983ce06d8\",\n            \"name\": \"Dash\",\n            \"ticker\": \"DASH\",\n            \"coin_id\": \"3\",\n            \"code\": \"dash\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"106.520000000000\",\n            \"idr\": \"1521149.000000000000\",\n            \"hnst\": \"5675.293722569181\",\n            \"eth\": \"0.034206710000\",\n            \"btc\": \"0.002433600000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"8f9007ce-9c9d-4b64-95a2-71a4eedb246b\",\n            \"name\": \"PIVX\",\n            \"ticker\": \"PIVX\",\n            \"coin_id\": \"14\",\n            \"code\": \"pivx\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.321878000000\",\n            \"idr\": \"4596.500000000000\",\n            \"hnst\": \"17.140618368213\",\n            \"eth\": \"0.000103330000\",\n            \"btc\": \"0.000007350000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"ccd13ac8-7d6c-40ce-8d95-2391a6d92b05\",\n            \"name\": \"Elrond\",\n            \"ticker\": \"ERD\",\n            \"coin_id\": \"909\",\n            \"code\": \"elrond-erd\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.075480000000\",\n            \"idr\": \"1073.630000000000\",\n            \"hnst\": \"4.943960672192\",\n            \"eth\": \"0.000031590000\",\n            \"btc\": \"0.000002120000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"89bf529a-9a70-4565-a976-65832fc3d7cc\",\n            \"name\": \"Elrond\",\n            \"ticker\": \"ERD\",\n            \"coin_id\": \"909\",\n            \"code\": \"eldorado-token\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.000174450000\",\n            \"idr\": \"2.490000000000\",\n            \"hnst\": \"0.009293246830\",\n            \"eth\": \"0.000000056001\",\n            \"btc\": \"0.000000003985\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"834ac499-bbf2-49b3-94a5-1d8c2e832c71\",\n            \"name\": \"Honest\",\n            \"ticker\": \"HNST\",\n            \"coin_id\": \"531\",\n            \"code\": \"honest-mining\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.018769310000\",\n            \"idr\": \"268.030000000000\",\n            \"hnst\": \"1.000000000000\",\n            \"eth\": \"0.000006030000\",\n            \"btc\": \"0.000000428806\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        },\n        {\n            \"id\": \"1a37ced7-5081-4cb3-b4ce-65a1570ca31a\",\n            \"name\": \"Ferrum\",\n            \"ticker\": \"FRM\",\n            \"coin_id\": \"905\",\n            \"code\": \"ferrum-network\",\n            \"exchange\": \"gecko\",\n            \"invalid\": 0,\n            \"record_time\": \"1644986052\",\n            \"usd\": \"0.111780000000\",\n            \"idr\": \"1596.240000000000\",\n            \"hnst\": \"5.946745148156\",\n            \"eth\": \"0.000035900000\",\n            \"btc\": \"0.000002550000\",\n            \"created_at\": \"2022-04-02T17:16:56.000Z\",\n            \"created_by\": null,\n            \"updated_at\": \"2022-02-15T14:34:12.000Z\",\n            \"updated_by\": null,\n            \"deleted_at\": null,\n            \"deleted_by\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "History",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmZDhkZWQ2LWY5MmItNDRiMi05MTU3LWMwZjI2YWYwZjQ0ZiIsImVtYWlsIjoiamhvbl9kb2VAbWFpbC5jb20iLCJpYXQiOjE2NDg5MTM1Njh9.NoZQlB68f2UZMQWeuNO6EIwEWWl7Fr4ksFB2Uz7pip0XQapPDKCAL5cMkf55Yp38j_LCVgU1PdnIIVMkJgRyAMduOdB_h_fg1QYkHKGvU5gMyhDf92L3fW0Z5Keoiq_c3pKwJ8vCU_tpER141A17wxVIu-xPGQ0_Lb0IoUfTzGvYLI6IMHYO_hF4q4nf3niFW16ADNjmMR1PVl5TBAnOu5UZ3VklPyX2kdj5fPxRnCwG-EoLOkAcKHJCJ6xII0FrI-4ykt5TFBD17-p8zxKk-vaqpU7CuPzmkVsWSy_SiWRVpayxrvE5EQMENxJ075khTCjqeyKxHfdD65SN3HOrDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:3000/api/v1/price/history?start_date=2022-04-01 01:16:00&end_date=2022-04-04 23:16:00&ticker=IDR&currency=idr&limit=100&page=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"price",
+						"history"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-04-01 01:16:00"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-04-04 23:16:00"
+						},
+						{
+							"key": "ticker",
+							"value": "IDR"
+						},
+						{
+							"key": "currency",
+							"value": "idr",
+							"description": "idr / usd / btc / eth / hnst"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "History",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:3000/api/v1/price/history?start_date=2022-04-01 01:16:00&end_date=2022-04-04 23:16:00&ticker=IDR&currency=idr&limit=100&page=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"price",
+								"history"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2022-04-01 01:16:00"
+								},
+								{
+									"key": "end_date",
+									"value": "2022-04-04 23:16:00"
+								},
+								{
+									"key": "ticker",
+									"value": "IDR"
+								},
+								{
+									"key": "currency",
+									"value": "idr",
+									"description": "idr / usd / btc / eth / hnst"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11096"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b58-r478frkQHjICBa12h/P3ZbaOVqg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 01:09:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"title\": \"Success\",\n    \"message\": \"Data found\",\n    \"type\": \"success\",\n    \"pagination\": {\n        \"limit\": 100,\n        \"page\": 1,\n        \"current_page\": 1,\n        \"total_page\": 60,\n        \"first_page\": 1,\n        \"last_page\": 60,\n        \"total_data\": 5906\n    },\n    \"data\": [\n        {\n            \"id\": \"000c0077-453d-4b61-9fba-e4176d31bbf9\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"0013c8dd-6680-4cc9-a7f0-e49649c96570\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.012000000000\"\n        },\n        {\n            \"id\": \"0013d69e-7f95-40e5-b09e-1ab55eae8851\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"002717be-5f26-426d-9079-fc7aa591eb1c\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"00284ab2-7c1a-489c-92b8-0c4995210535\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.999246000000\"\n        },\n        {\n            \"id\": \"0036c3ad-15e4-4b2b-9cb8-cd2a7a9c3876\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"003eacae-5ff0-45cd-a1c5-3c9927229bd9\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"004f93c0-2ede-43e9-b9d0-7784d0c9e761\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.008000000000\"\n        },\n        {\n            \"id\": \"004fadd8-4571-474a-bc65-3426171c63a3\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"0.991093000000\"\n        },\n        {\n            \"id\": \"005729ef-3b28-4f07-bbcf-e3a73d176e4d\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"005821e0-dfe3-4f91-9286-9ffc15bfd5e0\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"0058812c-e000-46a4-8c8b-f7e32dba8a18\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"00628db9-f035-4d44-aec1-a7c7417b6474\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"006d10ba-a38c-428a-aac4-81068082edfd\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"0077b5a4-6544-42cf-a33f-7b2a69c46ea1\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.012000000000\"\n        },\n        {\n            \"id\": \"0081287b-3b4c-4998-a42a-132a4720ea54\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"0089781c-5737-4fa6-862c-e98c7c77992a\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.009000000000\"\n        },\n        {\n            \"id\": \"00993e1e-afb0-42f0-9a75-385d08e9ff58\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"00a5c1df-8769-4e8a-874d-a98cc1a3027d\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"00ac6e88-ca55-4ab2-88a1-fa9310c74473\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"00c4330d-80b2-47e0-b8c5-8360ccf16858\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.009000000000\"\n        },\n        {\n            \"id\": \"00cb4419-a262-4894-b2db-a5c0e8ff243c\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.011000000000\"\n        },\n        {\n            \"id\": \"00cec22c-8633-437c-b8c0-dc0ea04e2e5b\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"00d71ba4-dc2e-43df-8917-dba366cdd28e\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"00d91b5b-8a0a-4cc5-ac58-bc7cc183ccf4\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"00ec78f0-5a69-42a5-88c6-7806c308723e\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.000000000000\"\n        },\n        {\n            \"id\": \"00f03534-c8dc-4971-9b0f-391d7a2adbde\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"00fc2618-e605-475e-9d88-a90457199ffc\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"00fe906c-1624-4031-a801-4af9c87df0b4\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"010f894d-a745-4421-ba32-39b1ba9d7db1\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"01340cb3-8bbb-40b2-8ce0-2470f057d8ff\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.000000000000\"\n        },\n        {\n            \"id\": \"014ee887-9fb2-4a82-95b0-76f5cf0bb141\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"01735a60-c536-4318-b2f0-4ac84da794a3\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"0189ed95-4cb7-41d4-8d20-927c777fe822\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.014000000000\"\n        },\n        {\n            \"id\": \"0192163b-0ff8-452f-a0f5-ce2ad3dd96bb\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"01987bd1-9946-4fb1-94d1-e15deb831187\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.013000000000\"\n        },\n        {\n            \"id\": \"01b931c4-df2f-4d9f-8f7d-7c4d82d66741\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"01bde965-71c6-438e-96f8-3baf1d4b5169\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"01ef048d-021c-4743-a5a6-f03c9ed0c092\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.999267000000\"\n        },\n        {\n            \"id\": \"01efb400-b35a-492a-979e-70376db69391\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"01f7e1ec-d104-4e6f-9a4d-3602166c7357\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.012000000000\"\n        },\n        {\n            \"id\": \"0203f78e-b91f-4b73-84d1-991d7f29aeb5\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"0206fe57-abbf-4eb8-a49b-b9911799e56a\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"020ced52-2482-42bc-ae26-b268a104f5c6\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.015000000000\"\n        },\n        {\n            \"id\": \"021542b2-e2b8-407a-be89-8ff0661c89dc\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"02204110-8f75-409c-8b1c-6c0926b2d4e2\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"02229922-7090-428d-8ede-09e1e43fe8e8\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"022e8059-cd8c-4e4b-b97b-1b4deefc471a\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.997963000000\"\n        },\n        {\n            \"id\": \"02374482-989b-4a7a-a8b0-b91853a55eb0\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"024f1c3d-4eb9-4003-be55-37567471e9ad\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"0259eea6-96ab-412d-b98f-2e1efbb7c92e\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"02669fac-a7e6-435b-8028-6ae3fe91614c\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.014000000000\"\n        },\n        {\n            \"id\": \"026b00d7-6bde-4582-b283-2d62a21685ff\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"026fba9f-508f-4e30-a676-2712c36e986e\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"0273e6ab-e774-4f8b-901c-d0046686bdf4\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"027f2095-c5b6-4f13-a941-9487b9e2bafe\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"029c1374-7594-4210-9d42-dc6c3ddf5662\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"02c09fca-102f-4ec8-8b39-2f89a731a3ca\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"02c0d754-8a0e-4e24-a077-3803fb4782d3\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"02c53e69-a080-4259-bd6b-78aa31e88d10\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"02c73059-a93a-4d25-9de3-06bae0dd099b\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"02cd01ab-f103-47f4-8afa-4a30316b1ccb\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"02d822aa-75b1-4547-bc7e-295eb778dd6d\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.994515000000\"\n        },\n        {\n            \"id\": \"02e32c1d-1d08-48ec-afa6-bed2e41cdc60\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"02ed5df8-2497-4052-a9d1-6e7363d9bedf\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.013000000000\"\n        },\n        {\n            \"id\": \"02f11a37-3b0f-4df2-8467-aa78bf3a99c9\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.010000000000\"\n        },\n        {\n            \"id\": \"02fb09ac-4606-482d-9ab6-f3d7637304f6\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"0307c668-71eb-45fb-ab8d-c3d512eb3bfe\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"03119c3b-a43a-4721-acf6-34964bfa2cf6\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.012000000000\"\n        },\n        {\n            \"id\": \"031f4819-54a9-4965-8291-f5b79043fb7c\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"0.998830000000\"\n        },\n        {\n            \"id\": \"0325757e-6031-4451-8d38-21c308df5cef\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"032db788-3697-4d41-87a4-f99461b71ca6\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"0335d9fa-8345-4f4f-a6fb-698e49ccb087\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"034f14a6-9fb3-413a-8cab-39c40874700d\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"035718d1-5d27-458a-854d-50c47c711727\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"035a5454-9721-4daa-8af8-75cf6937d60b\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"03663b00-bbbf-4f60-8f04-dd15cf440bce\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.008000000000\"\n        },\n        {\n            \"id\": \"0379e773-f66a-43df-9c06-043a642e7251\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"037fffaa-8442-4c8b-9665-78c6716182cd\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.998695000000\"\n        },\n        {\n            \"id\": \"03802b97-9e5c-4632-9d8e-39d088016905\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"0380bf13-2bcb-4f10-9cf8-69cc09627338\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"039b31ef-9023-4cb8-94ff-0dabcd81b5bb\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"0.998848000000\"\n        },\n        {\n            \"id\": \"03a7dac2-e4f4-480a-97ac-a0ddd3ec191b\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.010000000000\"\n        },\n        {\n            \"id\": \"03bcffa5-b21f-4a48-9f56-56ae9595458b\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"03c25616-604c-419a-a997-0fcc26fb6508\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.999307000000\"\n        },\n        {\n            \"id\": \"03cde501-439d-4021-b3c3-626ca6049d52\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"03d26d72-9cbd-4b3d-bbac-d68cf73dd79a\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"03d4d55a-2add-418b-9c03-8f1ee794c9fc\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.006000000000\"\n        },\n        {\n            \"id\": \"03e74b2b-e258-4dac-8964-9680daf84ace\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.007000000000\"\n        },\n        {\n            \"id\": \"03f2c594-1f2a-44bf-9e84-921bad3feb90\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.004000000000\"\n        },\n        {\n            \"id\": \"03f6f722-9a5c-4f34-a337-07580d1ad2e4\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.005000000000\"\n        },\n        {\n            \"id\": \"04143e0c-826f-430b-a73b-4341a5c4d146\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"0.997376000000\"\n        },\n        {\n            \"id\": \"04296b96-8e50-4ca0-a4d6-9b9a1d1632d6\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.002000000000\"\n        },\n        {\n            \"id\": \"0432ca0d-677f-4cba-a6aa-a680ff372710\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.003000000000\"\n        },\n        {\n            \"id\": \"04352fcc-8979-48c6-a32b-46c13a68fd66\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"0441da5d-3852-45a0-a404-95e65f73a226\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.001000000000\"\n        },\n        {\n            \"id\": \"04428b24-411a-421c-a8e0-aa69dd09a9c2\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"0.998475000000\"\n        },\n        {\n            \"id\": \"04456549-305d-43dc-ac12-74cd1d9f9168\",\n            \"datetime\": \"2022-04-02T17:16:56.000Z\",\n            \"price\": \"1.009000000000\"\n        },\n        {\n            \"id\": \"0463c62c-665f-4ced-958b-f6cb1c6bf208\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.011000000000\"\n        },\n        {\n            \"id\": \"046d51fa-a41b-4c5f-a003-cd8d163de6fa\",\n            \"datetime\": \"2022-04-02T17:16:57.000Z\",\n            \"price\": \"1.003000000000\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
