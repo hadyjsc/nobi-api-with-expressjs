@@ -1,3 +1,9 @@
+/**
+ * Created By : Hady Eka Saputra
+ * 
+ * This is class helper for extract the data from query request into sequelize parameter
+ */
+
 const _ = require('lodash');
 const moment = require('moment');
 const { Sequelize, Op } = require('sequelize');

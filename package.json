@@ -30,7 +30,7 @@
         "cors": "^2.8.5",
         "crypto-js": "^4.0.0",
         "crypto-random-string": "^3.3.0",
-        "csv-parse": "^5.0.4",
+        "csv-parser": "^3.0.0",
         "dotenv": "^8.2.0",
         "dotenv-expand": "^8.0.3",
         "express": "^4.17.1",

@@ -8,7 +8,7 @@ specifiers:
   cors: ^2.8.5
   crypto-js: ^4.0.0
   crypto-random-string: ^3.3.0
-  csv-parse: ^5.0.4
+  csv-parser: ^3.0.0
   dotenv: ^8.2.0
   dotenv-expand: ^8.0.3
   express: ^4.17.1
@@ -33,7 +33,7 @@ dependencies:
   cors: 2.8.5
   crypto-js: 4.1.1
   crypto-random-string: 3.3.1
-  csv-parse: 5.0.4
+  csv-parser: 3.0.0
   dotenv: 8.6.0
   dotenv-expand: 8.0.3
   express: 4.17.3
@@ -285,8 +285,12 @@ packages:
       type-fest: 0.8.1
     dev: false
 
-  /csv-parse/5.0.4:
-    resolution: {integrity: sha512-5AIdl8l6n3iYQYxan5djB5eKDa+vBnhfWZtRpJTcrETWfVLYN0WSj3L9RwvgYt+psoO77juUr8TG8qpfGZifVQ==}
+  /csv-parser/3.0.0:
+    resolution: {integrity: sha512-s6OYSXAK3IdKqYO33y09jhypG/bSDHPuyCme/IdEHfWpLf/jKcpitVFyOC6UemgGk8v7Q5u2XE0vvwmanxhGlQ==}
+    engines: {node: '>= 10'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.6
     dev: false
 
   /d/1.0.1:
