@@ -21,4 +21,8 @@ router.use('/api/v1/transaction', transaction)
 const price = require('./price')
 router.use('/api/v1/price', price)
 
+/** Web HTML Crawl */
+const crawl = require('./crawl')
+router.use('/api/v1/crawl', crawl)
+
 module.exports = router;
